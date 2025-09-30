@@ -49,7 +49,12 @@
     "tables": [
         {
             "$id": "68da70a4001897983c03",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "products",
             "enabled": true,
@@ -113,7 +118,12 @@
         },
         {
             "$id": "68da70a7001a94c57de3",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "customers",
             "enabled": true,
@@ -159,7 +169,12 @@
         },
         {
             "$id": "68da70a9001f162bc65f",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "orders",
             "enabled": true,
@@ -196,7 +211,12 @@
         },
         {
             "$id": "68da70ab000982b29755",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "order_items",
             "enabled": true,
@@ -242,7 +262,12 @@
         },
         {
             "$id": "68da70ad000eaad02071",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "inventory",
             "enabled": true,
@@ -270,7 +295,12 @@
         },
         {
             "$id": "68da70ae0028b5ba5dde",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "admin_users",
             "enabled": true,
@@ -307,7 +337,12 @@
         },
         {
             "$id": "68da70b0001180b7fb89",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "analytics_events",
             "enabled": true,
@@ -344,7 +379,12 @@
         },
         {
             "$id": "68da70b10039a9b2939d",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "analytics_summary",
             "enabled": true,
@@ -426,7 +466,12 @@
         },
         {
             "$id": "68da70ba0018a2631f77",
-            "$permissions": [],
+            "$permissions": [
+                "create(\"any\")",
+                "read(\"any\")",
+                "update(\"any\")",
+                "delete(\"any\")"
+            ],
             "databaseId": "68da7071003bbb01685e",
             "name": "sessions",
             "enabled": true,
@@ -455,6 +500,24 @@
                     "array": false,
                     "format": "",
                     "default": null
+                },
+                {
+                    "key": "session_id",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 36,
+                    "default": null,
+                    "encrypt": false
+                },
+                {
+                    "key": "user_agent",
+                    "type": "string",
+                    "required": false,
+                    "array": false,
+                    "size": 1024,
+                    "default": null,
+                    "encrypt": false
                 }
             ],
             "indexes": []

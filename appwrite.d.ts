@@ -48,7 +48,7 @@ export type AnalyticsEvents = Models.Row & {
     user_id: string | null;
     product_id: string | null;
 }
- 
+
 export type AnalyticsSummary = Models.Row & {
     total_page_views: number;
     unique_visitors: number;
@@ -64,4 +64,6 @@ export type Sessions = Models.Row & {
     user_id: string;
     login_time: string | null;
     logout_time: string | null;
+    session_id: string | null;
+    user_agent: string | null;
 }
